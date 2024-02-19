@@ -10,7 +10,7 @@ class DataBaseConfig {
   ConnectToDb = async () => {
     console.log(`[+] Connecting to DataBase`);
     mongoose
-      .connect("mongodb://localhost:27017/Image_Uploader_v1") /* Here be careful with the database service name */
+      .connect("mongodb://mongodb:27017/Image_Uploader_v1") /* Here be careful with the database service name */
       .then(() => {
         console.log("[+] MongoDB Connection Succeeded. ");
       })
